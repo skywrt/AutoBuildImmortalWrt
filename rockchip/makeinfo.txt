@@ -1,0 +1,26 @@
+Current Target: "rockchip/armv8"
+Current Architecture: "aarch64"
+Current Revision: "r32509-ed4f046c3537"
+Default Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-openssl logd mtd netifd uci uclient-fetch urandom-seed urngd uboot-envtools partx-utils mkf2fs kmod-gpio-button-hotplug fdisk automount autocore luci-app-cpufreq opkg busybox procd procd-ujail procd-seccomp dnsmasq-full firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe block-mount default-settings-chn kmod-nf-nathelper kmod-nf-nathelper-extra luci-light luci-app-package-manager luci-compat luci-lib-base luci-lib-ipkg
+Available Profiles:
+
+ariaboard_photonicat:
+    Ariaboard Photonicat
+    Packages: kmod-ath10k-sdio ath10k-firmware-qca9377-sdio wpad-openssl kmod-usb-net-cdc-mbim kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi iwinfo
+    hasImageMetadata: 1
+    SupportedDevices: ariaboard,photonicat
+armsom_sige3:
+    ArmSoM Sige3
+    Packages: kmod-brcmfmac kmod-r8125 wpad-openssl brcmfmac-firmware-43752-sdio brcmfmac-nvram-43752-sdio iwinfo
+    hasImageMetadata: 1
+    SupportedDevices: armsom,sige3
+armsom_sige7:
+    ArmSoM Sige7
+    Packages: kmod-brcmfmac kmod-r8125 wpad-openssl brcmfmac-firmware-43752-pcie brcmfmac-nvram-43752-pcie iwinfo
+    hasImageMetadata: 1
+    SupportedDevices: armsom,sige7
+friendlyarm_nanopi-r2s:
+    FriendlyARM NanoPi R2S
+    Packages: kmod-usb-net-rtl8152
+    hasImageMetadata: 1
+    SupportedDevices: friendlyarm,nanopi-r2s
