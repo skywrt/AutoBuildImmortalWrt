@@ -1,4 +1,4 @@
-name: build-rockchip-immortalWrt-24.10.0
+name: build-rockchip-immortalWrt-24.10.1
 
 on:
   workflow_dispatch:
@@ -9,10 +9,8 @@ on:
           输入 软路由型号 可选值如下：
         options:
           - friendlyarm_nanopi-r2s
-          - friendlyarm_nanopi-r3s
-          - friendlyarm_nanopi-r4s
         required: true
-        default: 'friendlyarm_nanopi-r2s'
+        default: 'friendlyarm_nanopi-r3s'
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
@@ -73,7 +71,7 @@ jobs:
               -e ENABLE_PPPOE=${{ inputs.enable_pppoe }} \
               -e PPPOE_ACCOUNT=${{ inputs.pppoe_account }} \
               -e PPPOE_PASSWORD=${{ inputs.pppoe_password }} \
-              immortalwrt/imagebuilder:rockchip-armv8-openwrt-24.10.0 /bin/bash /home/build/immortalwrt/build.sh
+              immortalwrt/imagebuilder:rockchip-armv8-openwrt-24.10.1 /bin/bash /home/build/immortalwrt/build.sh
           done
       - name: Generate Firmware SHA-256
         run: |
